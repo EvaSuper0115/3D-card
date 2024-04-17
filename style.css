@@ -26,12 +26,29 @@ body {
   padding: 0 5rem;
 }
 .kimono-showcase {
-  min-height: 35vh;
+  min-height: 55vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 2;
 }
-
-.kimono-showcase img {
-  height: 40rem;
+.circle {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(231, 236, 119, 1) 0%,
+    rgba(201, 203, 204, 1) 100%,
+    rgba(239, 237, 222, 1) 100%
+  );
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.kimono {
+  max-height: 150%;
+  min-height: 100%;
 }
