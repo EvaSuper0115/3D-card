@@ -20,13 +20,16 @@ body {
 }
 .card {
   min-height: 80vh;
-  width: 35rem;
   box-shadow: 0 20px 20px black, 0 0 50px black;
   border-radius: 40px;
   padding: 0.2rem 4rem;
+  display: grid;
+  grid-template-columns: 30vw 70vh;
+  justify-content: space-around;
+  align-items: center;
 }
 .kimono-showcase {
-  min-height: 55vh;
+  min-height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,14 +52,14 @@ body {
   align-items: center;
 }
 .kimono {
-  max-height: 150%;
+  max-height: 180%;
   min-height: 100%;
 }
 .info {
   padding: 1.5rem;
 }
 .info h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 .info h3,
 h4 {
