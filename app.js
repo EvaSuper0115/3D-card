@@ -26,12 +26,12 @@ selectDate.addEventListener("change", submitDate);
 //movement animation
 const card = document.querySelector(".card");
 const container = document.querySelector(".container");
-const kimonoShowcase = document.querySelector(".komono");
+const kimonoContainer = document.querySelector(".kimono-showcase-container");
 
 //make movement mouse sentitive
 container.addEventListener("mousemove", (event) => {
-  let xAxis = (window.innerWidth / 2 - event.pageX) / 50;
-  let yAxis = (window.innerHeight / 2 - event.pageY) / 50;
+  let xAxis = (window.innerWidth / 2 - event.pageX) / 40;
+  let yAxis = (window.innerHeight / 2 - event.pageY) / 40;
   console.log(xAxis);
-  card.style.transform = `rotateY(${xAxis}deg) rotate(${yAxis}deg) `;
+  kimonoContainer.style.transform = `rotateY(${xAxis}deg) rotate(${yAxis}deg) `;
 });
