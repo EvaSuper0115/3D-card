@@ -11,6 +11,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: url(./simpleBG.jpg);
+  background-size: cover;
 }
 .container {
   width: 50%;
@@ -19,14 +21,20 @@ body {
   align-items: center;
 }
 .card {
+  margin: 1rem;
   min-height: 80vh;
-  box-shadow: 0 20px 20px black, 0 0 50px black;
-  border-radius: 40px;
+  box-shadow: -3px -3px 48px rgb(76 76 76);
+  border-radius: 40px 250px 250px 40px;
   padding: 1rem 2rem;
   display: grid;
   grid-template-columns: 30vw 70vh;
   justify-content: space-around;
   align-items: center;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.75),
+    rgba(255, 255, 255, 0.15)
+  );
 }
 .kimono-showcase {
   min-height: 70vh;
@@ -39,24 +47,25 @@ body {
   height: 15rem;
   width: 15rem;
   border-radius: 50%;
-  background: radial-gradient(
-    circle,
-    rgba(231, 236, 119, 1) 0%,
-    rgba(201, 203, 204, 1) 100%,
-    rgba(239, 237, 222, 1) 100%
+  background: linear-gradient(
+    0deg,
+    rgba(230, 236, 119, 0.8) 0%,
+    rgba(201, 203, 204, 0.7) 100%,
+    rgba(239, 237, 222, 0.8) 100%
   );
   z-index: 1;
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 2px 2px 29px #585858;
 }
 .kimono {
   max-height: 180%;
   min-height: 100%;
 }
 .info {
-  padding: 1.5rem;
+  padding: 1.5rem 4rem 1.5rem 1.5rem;
 }
 .info h1 {
   font-size: 2.5rem;
@@ -79,7 +88,12 @@ h4 {
   font-size: 0.8rem;
   border-radius: 50px;
   border: #585858;
-  background: none;
+  background: linear-gradient(
+    0deg,
+    rgba(230, 236, 119, 0.8) 0%,
+    rgba(201, 203, 204, 0.7) 100%,
+    rgba(239, 237, 222, 0.8) 100%
+  );
   padding: 0.5rem;
   color: #585858;
   font-weight: 200;
@@ -92,19 +106,13 @@ h4 {
 }
 .rentButton {
   font-size: 1rem;
-  border-radius: 50px;
+
   border: none;
-  background: radial-gradient(
-    circle,
-    rgba(231, 236, 119, 1) 0%,
-    rgba(201, 203, 204, 1) 100%,
-    rgba(239, 237, 222, 1) 100%
-  );
+  background: none;
   padding: 1rem;
   color: #585858;
   font-weight: 100;
   width: 100%;
-  box-shadow: 0 2px 5px #585858;
 }
 
 .packageButton {
