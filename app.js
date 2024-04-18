@@ -16,6 +16,9 @@ function getNinetyDayslater() {
 document.getElementById("dateInput").setAttribute("min", getThreeDayslater());
 document.getElementById("dateInput").setAttribute("max", getNinetyDayslater());
 //click date form to select date
-const selectDate = document.querySelector(".dateForm");
-function submitDate() {}
-selectDate.addEventListener("change", submitDate());
+const selectDate = document.getElementById("dateInput");
+function submitDate(event) {
+  const selectedDate = event.target.value;
+  console.log(selectedDate);
+}
+selectDate.addEventListener("change", submitDate);
