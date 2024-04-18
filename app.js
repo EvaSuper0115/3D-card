@@ -27,11 +27,14 @@ selectDate.addEventListener("change", submitDate);
 const card = document.querySelector(".card");
 const container = document.querySelector(".container");
 const kimonoContainer = document.querySelector(".kimono-showcase-container");
+const kimono = document.querySelector(".kimono");
+const circle = document.querySelector(".circle");
 
 //make movement mouse sentitive
-container.addEventListener("mousemove", (event) => {
+kimonoContainer.addEventListener("mousemove", (event) => {
   let xAxis = (window.innerWidth / 2 - event.pageX) / 40;
   let yAxis = (window.innerHeight / 2 - event.pageY) / 40;
   console.log(xAxis);
-  kimonoContainer.style.transform = `rotateY(${xAxis}deg) rotate(${yAxis}deg) `;
+
+  circle.style.transform = `rotateY(${yAxis}deg) rotate(${xAxis}deg) `;
 });

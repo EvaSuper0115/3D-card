@@ -37,6 +37,9 @@ body {
   );
   backdrop-filter: blur(3px);
 }
+.kimono-showcase-container {
+  transform-style: preserve-3d;
+}
 .kimono-showcase {
   min-height: 70vh;
   display: flex;
@@ -59,7 +62,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 2px 2px 20px #848383;
+  box-shadow: 2px 15px 20px #848383;
 }
 .kimono {
   max-height: 180%;
