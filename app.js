@@ -1,6 +1,6 @@
-//click date button to select date
-const rentButton = document.querySelector(".rentButton");
-function displayDate() {
-  const dateForm = document.querySelector(".dateForm");
-}
-rentButton.addEventListener("click", displayDate());
+//can only select future date
+
+//click date form to select date
+const selectDate = document.querySelector(".dateForm");
+function submitDate() {}
+selectDate.addEventListener("change", submitDate());

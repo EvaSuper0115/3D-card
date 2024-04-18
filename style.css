@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Sedan", serif;
 }
 body {
   font-weight: 400;
@@ -23,7 +23,7 @@ body {
   width: 35rem;
   box-shadow: 0 20px 20px black, 0 0 50px black;
   border-radius: 40px;
-  padding: 0 5rem;
+  padding: 0.2rem 4rem;
 }
 .kimono-showcase {
   min-height: 55vh;
@@ -58,19 +58,38 @@ body {
 .info h1 {
   font-size: 3rem;
 }
-.info h3 {
+.info h3,
+h4 {
   color: #585858;
   font-weight: lighter;
   padding: 1.2rem 0rem;
+}
+.info h4 {
+  font-size: 0.8rem;
+}
+.packageSelection {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem 1rem 0;
+}
+.packageButton {
+  font-size: 0.8rem;
+  border-radius: 50px;
+  border: #585858;
+  background: none;
+  padding: 0.5rem;
+  color: #585858;
+  font-weight: 200;
+  box-shadow: 0 2px 5px #585858;
 }
 .rent {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-button {
-  font-size: 2rem;
-  border-radius: 30px;
+.rentButton {
+  font-size: 1rem;
+  border-radius: 50px;
   border: none;
   background: radial-gradient(
     circle,
@@ -79,12 +98,12 @@ button {
     rgba(239, 237, 222, 1) 100%
   );
   padding: 1rem;
-  cursor: pointer;
   color: #585858;
   font-weight: 100;
   width: 100%;
+  box-shadow: 0 2px 5px #585858;
 }
-button.active {
-  background: #585858;
-  color: white;
+
+.packageButton {
+  cursor: pointer;
 }
