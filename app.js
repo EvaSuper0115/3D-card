@@ -32,9 +32,11 @@ const circle = document.querySelector(".circle");
 
 //make movement mouse sentitive
 kimonoContainer.addEventListener("mousemove", (event) => {
-  let xAxis = (window.innerWidth / 2 - event.pageX) / 40;
-  let yAxis = (window.innerHeight / 2 - event.pageY) / 40;
-  console.log(xAxis);
+  let xAxis = (window.innerWidth / 2 - event.pageX) / 30;
+  let yAxis = (window.innerHeight / 2 - event.pageY) / 30;
 
-  circle.style.transform = `rotateY(${yAxis}deg) rotate(${xAxis}deg) `;
+  circle.style.transform = `rotateY(${xAxis}deg) rotate(${yAxis}deg) `;
+  kimono.style.transform = `rotateY(${xAxis * 1.5}deg) rotate(${
+    yAxis * 1.5
+  }deg) `;
 });
