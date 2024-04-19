@@ -31,12 +31,23 @@ const kimono = document.querySelector(".kimono");
 const circle = document.querySelector(".circle");
 
 //make movement mouse sentitive
-kimonoContainer.addEventListener("mousemove", (event) => {
+card.addEventListener("mousemove", (event) => {
   let xAxis = (window.innerWidth / 2 - event.pageX) / 30;
   let yAxis = (window.innerHeight / 2 - event.pageY) / 30;
 
   circle.style.transform = `rotateY(${xAxis}deg) rotate(${yAxis}deg) `;
+  //kimono move more then the circle
   kimono.style.transform = `rotateY(${xAxis * 1.5}deg) rotate(${
     yAxis * 1.5
   }deg) `;
+});
+
+//make animation pop back to original position when mouse not on the kimono
+card.addEventListener("mouseleave", (e) => {
+  let value = e / 0;
+  let xAxis = ~~value;
+  let yAxis = ~~value;
+  console.log(xAxis);
+  circle.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+  kimono.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
 });
