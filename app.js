@@ -43,11 +43,12 @@ card.addEventListener("mousemove", (event) => {
 });
 
 //make animation pop back to original position when mouse not on the kimono
-card.addEventListener("mouseleave", (e) => {
-  let value = e / 0;
-  let xAxis = ~~value;
-  let yAxis = ~~value;
-  console.log(xAxis);
-  circle.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
-  kimono.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+card.addEventListener("mouseenter", (event) => {
+  kimono.style.transition = "none";
+});
+
+card.addEventListener("mouseleave", (event) => {
+  circle.style.transform = `rotateY(0deg) rotateX(0deg)`;
+  kimono.style.transform = `rotateY(0deg) rotateX(0deg)`;
+  kimono.style.transition = "all 0.5s ease";
 });
