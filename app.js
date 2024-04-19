@@ -52,3 +52,22 @@ card.addEventListener("mouseleave", (event) => {
   kimono.style.transform = `rotateY(0deg) rotateX(0deg)`;
   kimono.style.transition = "all 0.5s ease";
 });
+//make kimono bigger when mouse enters the kimono
+//kimonoContainer.addEventListener("mouseenter", (event) => {
+// kimono.style.height = `300%`;
+// kimono.style.transition = "all 0.5s ease";
+//});
+//kimonoContainer.addEventListener("mouseleave", (event) => {
+// kimono.style.height = `180%`;
+//kimono.style.transition = "all 0.5s ease";
+//});
+
+//switch to kimono's back when mouse enter the kimonoContainer
+kimonoContainer.addEventListener("mouseenter", (event) => {
+  kimono.src = `./yellow_kimono_back.png`;
+  kimono.style.transition = "all 0.8s ease";
+});
+kimonoContainer.addEventListener("mouseleave", (event) => {
+  kimono.src = `./yellow_kimono.png`;
+  kimono.style.transition = "all 0.8s ease";
+});
