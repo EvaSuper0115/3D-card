@@ -34,7 +34,7 @@ const circle = document.querySelector(".circle");
 card.addEventListener("mousemove", (event) => {
   let xAxis = (window.innerWidth / 2 - event.pageX) / 30;
   let yAxis = (window.innerHeight / 2 - event.pageY) / 30;
-
+  console.log(xAxis);
   circle.style.transform = `rotateY(${xAxis}deg) rotate(${yAxis}deg) `;
   //kimono move more then the circle
   kimono.style.transform = `rotateY(${xAxis * 1.5}deg) rotate(${
@@ -69,7 +69,3 @@ kimonoContainer.addEventListener("mouseenter", (event) => {
 kimonoContainer.addEventListener("mouseleave", (event) => {
   kimono.src = `./yellow_kimono.png`;
 });
-
-window.increment = increment;
-window.save = save;
-window.reset = reset;
