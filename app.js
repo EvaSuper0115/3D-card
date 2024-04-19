@@ -69,3 +69,7 @@ kimonoContainer.addEventListener("mouseenter", (event) => {
 kimonoContainer.addEventListener("mouseleave", (event) => {
   kimono.src = `./yellow_kimono.png`;
 });
+
+window.increment = increment;
+window.save = save;
+window.reset = reset;
