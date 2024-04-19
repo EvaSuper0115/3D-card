@@ -65,9 +65,7 @@ card.addEventListener("mouseleave", (event) => {
 //switch to kimono's back when mouse enter the kimonoContainer
 kimonoContainer.addEventListener("mouseenter", (event) => {
   kimono.src = `./yellow_kimono_back.png`;
-  kimono.style.transition = "all 0.8s ease";
 });
 kimonoContainer.addEventListener("mouseleave", (event) => {
   kimono.src = `./yellow_kimono.png`;
-  kimono.style.transition = "all 0.8s ease";
 });
